@@ -1,13 +1,59 @@
 import { FaEnvelope } from "react-icons/fa";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
-const Footer = () => {
+gsap.registerPlugin(ScrollTrigger);
+
+const Footer = (prop) => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".contact-title",
+      {
+        scale: 0.1,
+      },
+      {
+        scale: 1,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".tech",
+          start: "top 80%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".contact",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".contact",
+          start: "top 100%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <footer className="bg-zinc-800 flex justify-center  py-16">
+    <footer
+      className={`bg-zinc-800 flex justify-center  py-16 ${prop.className}`}
+      id="contact"
+    >
       <section className="flex flex-col gap-3  w-[85%]">
-        <p className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-b from-red-300 font-mono to-orange-500  ">
+        <p className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-b from-red-300 font-mono to-orange-500  contact-title">
           Contacts
         </p>
-        <small className="md:text-base  font-thin">
+        <small className="md:text-base  font-thin contact ">
           Season Frontend Frontend Engineer with over 2 years of hands-on
           experience in designing and implementing scalable and innovative web
           solutions. Adapt at leveraging a comprehensive skill set encompassing
@@ -15,14 +61,16 @@ const Footer = () => {
         </small>
         <div
           className="flex
-       items-center gap-2"
+       items-center gap-2 contact"
         >
           <FaEnvelope />
-          <span className="md:text-base font-thin">Wardude704@gamil.com</span>
+          <span className="md:text-base font-thin contact">
+            Wardude704@gamil.com
+          </span>
         </div>
         <div className="flex gap-[10px] items-center">
           <svg
-            className="h-[25px] w-[25px] cursor-pointer"
+            className="h-[25px] w-[25px] cursor-pointer contact"
             viewBox="0 0 20 20"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -52,12 +100,12 @@ const Footer = () => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 30 30"
-            className="h-[25px] w-[25px] fill-current text-white cursor-pointer"
+            className="h-[25px] w-[25px] fill-current text-white cursor-pointer contact"
           >
             <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z" />
           </svg>
           <svg
-            className="h-[25px] w-[25px] fill-current text-white cursor-pointer"
+            className="h-[25px] w-[25px] fill-current text-white cursor-pointer contact"
             viewBox="0 0 48 48"
             xmlns="http://www.w3.org/2000/svg"
           >

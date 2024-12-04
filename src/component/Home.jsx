@@ -1,12 +1,77 @@
-// import { FaHtml5, FaJs, FaReact, FaCube, FaCss3 } from "react-icons/fa";
-// import { MdFormatPaint } from "react-icons/md";
+import { useEffect } from "react";
 import Button from "./Button";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
 
-const Home = () => {
+gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(ScrollTrigger);
+
+// gsap.fromTo(".menu-item", { rotation: -45 }, { rotation: 0, duration: 1 });
+// gsap.fromTo(".tech", { x: -100 }, { x: 0, duration: 1, stagger: 0.2 });
+// gsap.fromTo(".welcome", { scale: 0.5 }, { scale: 1, duration: 1 });
+// gsap.fromTo(".menu-item", { skewX: 30 }, { skewX: 0, duration: 1 });
+
+const Home = (prop) => {
+  useEffect(() => {
+    gsap.fromTo(".avatar", { rotation: -45 }, { rotation: 0, duration: 1 });
+
+    gsap.fromTo(".welcome", { scale: 0.1 }, { scale: 1, duration: 1 });
+
+    gsap.fromTo(
+      ".button",
+      { opacity: 0 },
+      { opacity: 1, duration: 5, stagger: 0.2 }
+    );
+
+    gsap.fromTo(
+      ".tech",
+      { opacity: 0 },
+      { opacity: 1, duration: 1, stagger: 0.2 }
+    );
+
+    gsap.fromTo(
+      ".tech",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".tech",
+          start: "top 80%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".bio-text",
+      {
+        text: "",
+      },
+      {
+        text: " I’m a passionate Frontend Developer with a knack for creating visually appealing and user-friendly web experiences. I specialize in building responsive, interactive, and performant web applications using modern technologies like React, Three.js, and Tailwind CSS.",
+        duration: 5,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
   return (
-    <section className="flex flex-col justify-center items-center mt-32 gap-4 mb-[40px] ">
-      <img src="src/assets/avater.jpeg" alt="" className="md:w-40 w-36" />
-      <h1 className="font-bold text-2xl sm:text-3xl text-center w-[80%]">
+    <section
+      className={`flex flex-col justify-center items-center mt-40 sm:mt-44 gap-4 sm:gap-6 mb-[40px] ${prop.className}`}
+      id="home"
+    >
+      <img
+        src="src/assets/avater.jpeg"
+        alt=""
+        className="md:w-40 w-36 avatar"
+      />
+      <h1 className="font-bold text-2xl sm:text-3xl text-center w-[80%] welcome">
         I do code and make content{" "}
         <span className="  bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-purple-400">
           about it!
@@ -16,24 +81,25 @@ const Home = () => {
         className="flex
       flex-col md:w-[80%] w-[90%] text-lg text-stone-300 font-light"
       >
-        <small className="text-center text-lg text-[#a7a7a7]">
-          I’m a passionate Frontend Developer with a knack for creating visually
-          appealing and user-friendly web experiences. I specialize in building
-          responsive, interactive, and performant web applications using modern
-          technologies like React, JavaScript, and Tailwind CSS.
-        </small>
+        <small className="text-center text-lg text-[#a7a7a7] bio-text "></small>
       </div>
-      <div className="flex gap-7">
-        <Button className="bg-stone-300 text-zinc-900 ">Get in touch</Button>
-        <Button className="bg-transparent text-stone-300">Download CV</Button>
+      <div className="flex gap-4 :gap-7">
+        <Button className="bg-stone-300 text-zinc-900 button">
+          Get in touch
+        </Button>
+        <Button className="bg-transparent text-stone-300 button">
+          Download CV
+        </Button>
       </div>
 
-      <div className="flex flex-col items-center justify-center mt-7 w-[90%] md:w-[85%]">
+      <div className="flex flex-col items-center justify-center mt-5 w-[90%] md:w-[85%]">
         <p className="font-bold tracking-wider text-xl font-mono">
           EXPERIENCE WITH
         </p>
         <div className="grid grid-cols-4 md:flex justify-between mt-7 w-[100%] gap-3">
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <svg
               className="w-[40px] h-[40px]"
               viewBox="0 0 32 32"
@@ -51,7 +117,9 @@ const Home = () => {
             </svg>
             <span>Git</span>
           </div>
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <svg
               className="w-[40px] h-[40px]"
               viewBox="0 0 256 256"
@@ -77,7 +145,9 @@ const Home = () => {
             </svg>
             <span>JavaScript</span>
           </div>
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <img
               src="src/assets/Three.js_Icon.svg.png"
               alt=""
@@ -85,7 +155,9 @@ const Home = () => {
             />
             <span>Three.js</span>
           </div>
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -104,7 +176,9 @@ const Home = () => {
             <span>React</span>
           </div>
 
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <svg
               className="w-[40px] h-[40px]"
               viewBox="0 -6 256 256"
@@ -118,7 +192,9 @@ const Home = () => {
             </svg>
             <span>Redux</span>
           </div>
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <svg
               className="w-[40px] h-[40px]"
               viewBox="0 -51 256 256"
@@ -148,7 +224,9 @@ const Home = () => {
             </svg>
             <span className="text-center">Tailwind CSS</span>
           </div>
-          <div className="flex flex-col items-center text-base font-medium tracking-wide gap-3">
+          <div
+            className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
+          >
             <svg
               fill="#000000"
               className="w-[40px] h-[40px] text-white fill-current"

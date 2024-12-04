@@ -1,6 +1,9 @@
-const Experience = () => {
+const Experience = (prop) => {
   return (
-    <section className="flex flex-col items-center justify-center mb-[80px]">
+    <section
+      className={`${prop.className} flex flex-col items-center justify-center mb-[80px]`}
+      id="experience"
+    >
       <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-300 text-3xl to-orange-500 font-bold mb-7 text-center font-mono">
         EXPERIENCE
       </h1>
