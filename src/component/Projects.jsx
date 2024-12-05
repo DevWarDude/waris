@@ -13,7 +13,7 @@ const Projects = (prop) => {
         <div className="flex gap-y-10 flex-col justify-between items-center md:gap-x-10 md:flex-row">
           <div className="shadow-md sm:w-[70%] md:w-[50%] lg:w-[30%]">
             <img
-              src="src/assets/Screenshot 2024-12-03 215906.png"
+              src="./Screenshot 2024-12-03 215906.png"
               alt=""
               className=" rounded-t-2xl"
             />
@@ -31,7 +31,7 @@ const Projects = (prop) => {
           </div>
           <div className="shadow-md sm:w-[70%] md:w-[50%] lg:w-[30%]">
             <img
-              src="src/assets/Screenshot 2024-12-03 220010.png"
+              src="./Screenshot 2024-12-03 220010.png"
               alt=""
               className=" rounded-t-2xl"
             />
@@ -49,7 +49,7 @@ const Projects = (prop) => {
           </div>
           <div className="shadow-md sm:w-[70%] md:w-[50%] lg:w-[30%]">
             <img
-              src="src/assets/Screenshot 2024-12-03 215906.png"
+              src="./Screenshot 2024-12-03 215906.png"
               alt=""
               className=" rounded-t-2xl"
             />

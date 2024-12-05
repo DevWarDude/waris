@@ -66,11 +66,7 @@ const Home = (prop) => {
       className={`flex flex-col justify-center items-center mt-40 sm:mt-44 gap-4 sm:gap-6 mb-[40px] ${prop.className}`}
       id="home"
     >
-      <img
-        src="src/assets/avater.jpeg"
-        alt=""
-        className="md:w-40 w-36 avatar"
-      />
+      <img src="./avater.jpeg" alt="" className="md:w-40 w-36 avatar" />
       <h1 className="font-bold text-2xl sm:text-3xl text-center w-[80%] welcome">
         I do code and make content{" "}
         <span className="  bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-purple-400">
@@ -149,7 +145,7 @@ const Home = (prop) => {
             className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
           >
             <img
-              src="src/assets/Three.js_Icon.svg.png"
+              src="./Three.js_Icon.svg.png"
               alt=""
               className="h-[40px] w-[40px] bg-white"
             />

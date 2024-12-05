@@ -12,6 +12,8 @@
 //   { backgroundColor: "#ffffff", duration: 1 }
 // );
 
+// SHA256:MUGeLozvfvjEMEw8ffcIgk6tJQg8jMnANP9owANM3cw warisganiu830
+
 // gsap.fromTo(
 //   ".text",
 //   { color: "#000000" },
