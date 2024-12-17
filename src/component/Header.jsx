@@ -32,7 +32,7 @@ const Header = () => {
   }
 
   return (
-    <header className="fixed right-0 top-0 left-0 z-[999]">
+    <header className="fixed right-0 top-0 left-0 z-[999] font-serif">
       <div className="hidden lg:flex justify-between bg-zinc-800 px-[7%] py-6 text-zinc-100 items-center">
         <div className="text-2xl font-semibold tracking-tight">WarDude🦊</div>
 
@@ -165,7 +165,7 @@ const Header = () => {
         </ul>
         <div className="flex gap-5 items-center">
           <svg
-            className="h-[25px] w-[25px] cursor-pointer mobile-menu"
+            className={`h-[25px] w-[25px] cursor-pointer mobile-menu ${showMenu && "mobile-menu"}`}
             viewBox="0 0 20 20"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

@@ -10,8 +10,12 @@ export default {
         xl: "1440px",
       },
       fontFamily: {
-        sans: ['"Public Sans"', "ui-sans-serif", "system-ui"], // Add Public Sans
+        sans: ['"Public Sans"', "ui-sans-serif", "system-ui"],
+        ubuntu: ["Ubuntu", "sans-serif"],
       },
+      // backgroundImage: {
+      //   "custom-gradient": "linear-gradient(135deg, zinc-900, zinc-500",
+      // },
     },
   },
   plugins: [],

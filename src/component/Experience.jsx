@@ -9,17 +9,17 @@ const Experience = (prop) => {
       </h1>
       <div className="w-[85%] flex flex-col gap-10">
         <div>
-          <div className=" items-center justify-between lg:flex">
+          <div className=" items-center justify-between lg:flex text-white">
             <div className="flex gap-5 mb-2">
-              <p className="font-bold text-lg">
+              <p className="font-bold text-lg md:text-2xl">
                 Intern Frontend Developer at Distinct Digital Strategy
               </p>
             </div>
-            <span className="lg:block font-medium text-base lg:font-thin lg:text-sm text-slate-200 md:font-semibold">
+            <span className="lg:block font-medium text-base  md:text-xl  md: md:font-semibold">
               Feb 2024 - Present
             </span>
           </div>
-          <small className="text-slate-200 lg:font-thin md:text-sm ">
+          <small className="text-stone-300 lg:font-thin md:text-lg ">
             As an Intern Frontend Developer at Distinct Digital Strategy since
             February 2024, I have gained valuable experience in designing and
             developing user-centric web interfaces. My role involves
@@ -31,15 +31,15 @@ const Experience = (prop) => {
         <div>
           <div className="items-center justify-between lg:flex">
             <div className="flex gap-5 mb-2">
-              <p className="font-bold text-lg">
+              <p className="font-bold text-lg md:text-2xl">
                 Junior Frontend Developer at VirtualTourNG
               </p>
             </div>
-            <span className="lg:block font-medium md:font-semibold text-base lg:font-thin lg:text-sm text-slate-200">
+            <span className="lg:block font-medium md:font-semibold text-base   md:text-xl">
               Mar 2024 - Present
             </span>
           </div>
-          <small className="text-slate-200 lg:font-thin md:text-sm">
+          <small className="text-stone-300 lg:font-thin md:text-lg">
             As a Junior Frontend Developer at VirtualTourNG since March 2024.
             Leveraging technologies like JavaScript, Tailwind CSS, and Three.js,
             I have contributed to dynamic projects that align with modern web
