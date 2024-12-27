@@ -133,7 +133,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`flex transition-all duration-300  flex-col bg-zinc-800 z-0 relative  pb-10 items-center  gap-14 ${!showMenu && "trans"}`}
+        className={`flex transition-all duration-300  flex-col bg-zinc-800 z-0 relative items-center  gap-10 ${!showMenu && "trans"} ${showMenu && "h-[100vh]"}`}
       >
         <ul
           className={`flex flex-col mt-10 gap-8 text-xl sm:mt-0 items-center `}

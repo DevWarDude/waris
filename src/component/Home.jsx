@@ -14,7 +14,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = (prop) => {
   useEffect(() => {
-    gsap.fromTo(".avatar", { rotation: -45 }, { rotation: 0, duration: 1 });
+    gsap.fromTo(
+      ".avatar",
+      { rotation: -45 },
+      { rotation: 0, duration: 1, fontFamily: "font-ubuntu" }
+    );
 
     gsap.fromTo(".welcome", { scale: 0.1 }, { scale: 1, duration: 1 });
 
@@ -44,6 +48,7 @@ const Home = (prop) => {
           start: "top 80%",
           end: "top 20%",
           toggleActions: "play none none reverse",
+          fontFamily: "font-ubuntu",
         },
       }
     );
@@ -57,17 +62,18 @@ const Home = (prop) => {
         text: " I’m a passionate Frontend Developer with a knack for creating visually appealing and user-friendly web experiences. I specialize in building responsive, interactive, and performant web applications using modern technologies like React, Three.js, and Tailwind CSS.",
         duration: 5,
         ease: "power2.out",
+        fontFamily: "font-ubuntu",
       }
     );
   }, []);
 
   return (
     <section
-      className={`flex flex-col justify-center items-center mt-40 sm:mt-44 gap-4 sm:gap-6 mb-[40px] ${prop.className}`}
+      className={`flex flex-col justify-center items-center mt-40 sm:mt-44 gap-4 font-ubuntu sm:gap-6 mb-[40px] ${prop.className}`}
       id="home"
     >
       <img src="./avater.jpeg" alt="" className="md:w-40 w-36 avatar" />
-      <h1 className="font-bold text-2xl sm:text-3xl text-center w-[80%] welcome">
+      <h1 className="font-bold font-ubuntu text-2xl sm:text-3xl text-center w-[80%] welcome">
         I do code and make content{" "}
         <span className="  bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-purple-400">
           about it!
@@ -89,9 +95,7 @@ const Home = (prop) => {
       </div>
 
       <div className="flex flex-col items-center justify-center mt-5 w-[90%] md:w-[85%]">
-        <p className="font-bold tracking-wider text-xl font-mono">
-          EXPERIENCE WITH
-        </p>
+        <p className="font-bold tracking-wider text-xl ">EXPERIENCE WITH</p>
         <div className="grid grid-cols-4 md:flex justify-between mt-7 w-[100%] gap-3">
           <div
             className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
