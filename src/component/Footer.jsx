@@ -41,7 +41,7 @@ const Footer = (prop) => {
           end: "top 20%",
           toggleActions: "play none none reverse",
         },
-        fontFamily: "font-audiowide",
+        // fontFamily: "font-audiowide",
       }
     );
   }, []);
