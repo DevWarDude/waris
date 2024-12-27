@@ -14,11 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = (prop) => {
   useEffect(() => {
-    gsap.fromTo(
-      ".avatar",
-      { rotation: -45 },
-      { rotation: 0, duration: 1, fontFamily: "font-ubuntu" }
-    );
+    gsap.fromTo(".avatar", { rotation: -45 }, { rotation: 0, duration: 1 });
 
     gsap.fromTo(".welcome", { scale: 0.1 }, { scale: 1, duration: 1 });
 
@@ -48,7 +44,6 @@ const Home = (prop) => {
           start: "top 80%",
           end: "top 20%",
           toggleActions: "play none none reverse",
-          fontFamily: "font-ubuntu",
         },
       }
     );
@@ -62,7 +57,6 @@ const Home = (prop) => {
         text: " I’m a passionate Frontend Developer with a knack for creating visually appealing and user-friendly web experiences. I specialize in building responsive, interactive, and performant web applications using modern technologies like React, Three.js, and Tailwind CSS.",
         duration: 5,
         ease: "power2.out",
-        fontFamily: "font-ubuntu",
       }
     );
   }, []);
@@ -83,9 +77,9 @@ const Home = (prop) => {
         className="flex
       flex-col md:w-[80%] w-[90%] text-lg text-stone-300 font-light"
       >
-        <small className="text-center text-lg text-[#a7a7a7] bio-text "></small>
+        <small className="text-center text-lg text-[#a7a7a7] bio-text font-ubuntu"></small>
       </div>
-      <div className="flex gap-4 :gap-7">
+      <div className="flex gap-4 :gap-7 font-ubuntu">
         <Button className="bg-stone-300 text-zinc-900 button">
           Get in touch
         </Button>
@@ -94,7 +88,7 @@ const Home = (prop) => {
         </Button>
       </div>
 
-      <div className="flex flex-col items-center justify-center mt-5 w-[90%] md:w-[85%]">
+      <div className="flex flex-col items-center justify-center mt-5 w-[90%] md:w-[85%] font-ubuntu">
         <p className="font-bold tracking-wider text-xl ">EXPERIENCE WITH</p>
         <div className="grid grid-cols-4 md:flex justify-between mt-7 font-ubuntu w-[100%] gap-3">
           <div

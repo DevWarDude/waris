@@ -56,7 +56,7 @@ const Footer = (prop) => {
           Contacts
         </p>
 
-        <span className="md:text-xl contact font-ubuntu">
+        <span className="text-stone-300 lg:font-thin  md:text-lg font-ubuntu">
           Season Frontend Frontend Engineer with over 2 years of hands-on
           experience in designing and implementing scalable and innovative web
           solutions. Adapt at leveraging a comprehensive skill set encompassing
@@ -64,10 +64,12 @@ const Footer = (prop) => {
         </span>
         <div
           className="flex
-       items-center gap-2 contact md:text-lg"
+       items-center gap-2 contact text-stone-300 lg:font-thin  md:text-lg font-ubuntu"
         >
           <FaEnvelope />
-          <span className=" contact font-ubuntu">Wardude704@gamil.com</span>
+          <span className=" contact text-stone-300 lg:font-thin  md:text-lg font-ubuntu">
+            Wardude704@gamil.com
+          </span>
         </div>
         <div className="flex gap-[10px] items-center">
           <svg

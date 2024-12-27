@@ -9,7 +9,7 @@ const Experience = (prop) => {
       </h1>
       <div className="w-[85%] flex flex-col font-sans gap-10">
         <div>
-          <div className=" items-center justify-between lg:flex text-white">
+          <div className=" items-center justify-between lg:flex text-white lg:tracking-wider">
             <div className="flex gap-5 mb-2">
               <p className="font-bold text-lg md:text-2xl ">
                 Intern Frontend Developer at Distinct Digital Strategy
@@ -29,7 +29,7 @@ const Experience = (prop) => {
           </span>
         </div>
         <div>
-          <div className="items-center justify-between lg:flex">
+          <div className="items-center justify-between lg:flex lg:tracking-wider">
             <div className="flex gap-5 mb-2">
               <p className="font-bold text-lg md:text-2xl">
                 Junior Frontend Developer at VirtualTourNG
