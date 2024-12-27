@@ -33,11 +33,11 @@ const Header = () => {
 
   return (
     <header className="fixed right-0 top-0 left-0 z-[999] font-serif">
-      <div className="hidden lg:flex justify-between bg-zinc-800 px-[7%] py-6 text-zinc-100 items-center">
+      <div className="hidden lg:flex justify-between bg-zinc-800 px-[7%] py-8 text-zinc-100 items-center">
         <div className="text-2xl font-semibold tracking-tight">WarDude🦊</div>
 
         <div className="flex items-center justify-between gap-[80px]">
-          <ul className="flex gap-8 text-xl">
+          <ul className="flex gap-8 text-2xl">
             <li
               className="cursor-pointer tracking-wider menu-item"
               onClick={() => scrollToSection("home")}
@@ -65,7 +65,7 @@ const Header = () => {
           </ul>
           <div className="flex gap-5 items-center">
             <svg
-              className="h-[25px] w-[25px] cursor-pointer menu-item"
+              className="h-[30px] w-[30px] cursor-pointer menu-item"
               viewBox="0 0 20 20"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,12 +95,12 @@ const Header = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 30 30"
-              className="h-[25px] w-[25px] fill-current text-white menu-item cursor-pointer"
+              className="h-[30px] w-[30px] fill-current text-white menu-item cursor-pointer"
             >
               <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z" />
             </svg>
             <svg
-              className="h-[25px] w-[25px] fill-current text-white menu-item cursor-pointer"
+              className="h-[30px] w-[30px] fill-current text-white menu-item cursor-pointer"
               viewBox="0 0 48 48"
               xmlns="http://www.w3.org/2000/svg"
             >

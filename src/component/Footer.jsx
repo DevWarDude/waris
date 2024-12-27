@@ -22,6 +22,7 @@ const Footer = (prop) => {
           end: "top 20%",
           toggleActions: "play none none reverse",
         },
+        // fontFamily: "font-ubuntu",
       }
     );
 
@@ -40,20 +41,22 @@ const Footer = (prop) => {
           end: "top 20%",
           toggleActions: "play none none reverse",
         },
+        fontFamily: "font-audiowide",
       }
     );
   }, []);
 
   return (
     <footer
-      className={`bg-zinc-800 font-ubuntu flex justify-center text-stone-300  py-16 ${prop.className}`}
+      className={`bg-zinc-800  flex justify-center text-stone-300  py-16 ${prop.className}`}
       id="contact"
     >
       <section className="flex flex-col gap-3  w-[85%]">
-        <p className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-b from-red-300  to-orange-500  contact-title">
+        <p className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-b from-red-300  to-orange-500 font-audiowide contact-title">
           Contacts
         </p>
-        <span className="md:text-lg   contact ">
+
+        <span className="md:text-xl contact font-ubuntu">
           Season Frontend Frontend Engineer with over 2 years of hands-on
           experience in designing and implementing scalable and innovative web
           solutions. Adapt at leveraging a comprehensive skill set encompassing
@@ -64,7 +67,7 @@ const Footer = (prop) => {
        items-center gap-2 contact md:text-lg"
         >
           <FaEnvelope />
-          <span className=" contact">Wardude704@gamil.com</span>
+          <span className=" contact font-ubuntu">Wardude704@gamil.com</span>
         </div>
         <div className="flex gap-[10px] items-center">
           <svg

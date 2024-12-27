@@ -7,10 +7,10 @@ const Projects = (prop) => {
       id="projects"
     >
       <div className="w-[85%]">
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-300 text-3xl to-orange-500 font-bold mb-7 text-center font-mono">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-300 text-3xl to-orange-500 font-bold mb-7 text-center font-audiowide">
           PROJECTS
         </h1>
-        <div className="flex gap-y-10 flex-col justify-between items-center md:gap-x-10 md:flex-row">
+        <div className="flex gap-y-10 flex-col justify-between items-center md:gap-x-10 md:flex-row font-ubuntu">
           <div className="shadow-md sm:w-[70%] md:w-[50%] lg:w-[30%]">
             <img
               src="./Screenshot 2024-12-03 215906.png"

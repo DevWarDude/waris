@@ -25,6 +25,7 @@ function App() {
             end: "top 50%",
             toggleActions: "play none none reverse",
           },
+          fontFamily: "font-ubuntu",
         }
       );
     });

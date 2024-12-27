@@ -10,8 +10,9 @@ export default {
         xl: "1440px",
       },
       fontFamily: {
-        sans: ['"Public Sans"', "ui-sans-serif", "system-ui"],
+        sans: ["Public Sans", "ui-sans-serif", "system-ui"],
         ubuntu: ["Ubuntu", "sans-serif"],
+        audiowide: ["Audiowide", "cursive"],
       },
       // backgroundImage: {
       //   "custom-gradient": "linear-gradient(135deg, zinc-900, zinc-500",

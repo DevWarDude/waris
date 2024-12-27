@@ -96,7 +96,7 @@ const Home = (prop) => {
 
       <div className="flex flex-col items-center justify-center mt-5 w-[90%] md:w-[85%]">
         <p className="font-bold tracking-wider text-xl ">EXPERIENCE WITH</p>
-        <div className="grid grid-cols-4 md:flex justify-between mt-7 w-[100%] gap-3">
+        <div className="grid grid-cols-4 md:flex justify-between mt-7 font-ubuntu w-[100%] gap-3">
           <div
             className={`flex flex-col items-center text-base font-medium tracking-wide gap-3 tech`}
           >
