@@ -4,7 +4,7 @@ const Experience = (prop) => {
       className={`${prop.className} flex flex-col items-center justify-center mb-[80px]`}
       id="experience"
     >
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-300 text-3xl to-orange-500 font-audiowide font-bold mb-7 text-center ">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-b from-red-300 text-3xl to-orange-500 font-audiowide font-bold mb-7 text-center sm:my-14 sm:text-4xl">
         EXPERIENCE
       </h1>
       <div className="w-[85%] flex flex-col font-sans gap-10">

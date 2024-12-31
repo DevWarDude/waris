@@ -43,7 +43,7 @@ const Home = (prop) => {
           trigger: ".tech",
           start: "top 80%",
           end: "top 20%",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none ",
         },
       }
     );
