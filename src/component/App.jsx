@@ -21,9 +21,8 @@ function App() {
           duration: 1,
           scrollTrigger: {
             trigger: section,
-            start: "top 80%",
-            end: "top 50%",
-            toggleActions: "play none none reverse",
+            start: "top 100%",
+            toggleActions: "play none none ",
           },
           fontFamily: "font-ubuntu",
         }

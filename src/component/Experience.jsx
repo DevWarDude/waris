@@ -19,7 +19,7 @@ const Experience = (prop) => {
               Feb 2024 - Present
             </span>
           </div>
-          <span className="text-stone-300 lg:font-thin md:text-lg font-ubuntu">
+          <span className="text-stone-200 opacity-65 lg:font-thin md:text-lg font-ubuntu sm:block sm:mt-5 sm:leading-7">
             As an Intern Frontend Developer at Distinct Digital Strategy since
             February 2024, I have gained valuable experience in designing and
             developing user-centric web interfaces. My role involves
@@ -35,11 +35,11 @@ const Experience = (prop) => {
                 Junior Frontend Developer at VirtualTourNG
               </p>
             </div>
-            <span className="lg:block font-medium md:font-semibold text-lg   md:text-xl">
+            <span className=" font-medium md:font-semibold text-lg   md:text-xl">
               Mar 2024 - Present
             </span>
           </div>
-          <span className="text-stone-300 lg:font-thin  md:text-lg font-ubuntu">
+          <span className="text-stone-200 opacity-65 font-thin  md:text-lg font-ubuntu sm:block sm:leading-7 sm:mt-5">
             As a Junior Frontend Developer at VirtualTourNG since March 2024.
             Leveraging technologies like JavaScript, Tailwind CSS, and Three.js,
             I have contributed to dynamic projects that align with modern web

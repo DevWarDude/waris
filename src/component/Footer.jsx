@@ -38,8 +38,7 @@ const Footer = (prop) => {
         scrollTrigger: {
           trigger: ".contact",
           start: "top 100%",
-          end: "top 20%",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none ",
         },
         // fontFamily: "font-audiowide",
       }
@@ -56,7 +55,7 @@ const Footer = (prop) => {
           Contacts
         </p>
 
-        <span className="text-stone-300 lg:font-thin  md:text-lg font-ubuntu">
+        <span className="text-stone-200 opacity-65 lg:font-thin  md:text-lg font-ubuntu ">
           Season Frontend Frontend Engineer with over 2 years of hands-on
           experience in designing and implementing scalable and innovative web
           solutions. Adapt at leveraging a comprehensive skill set encompassing
@@ -67,7 +66,7 @@ const Footer = (prop) => {
        items-center gap-2 contact text-stone-300 lg:font-thin  md:text-lg font-ubuntu"
         >
           <FaEnvelope />
-          <span className=" contact text-stone-300 lg:font-thin  md:text-lg font-ubuntu">
+          <span className=" contact  opacity-65 lg:font-thin  md:text-lg font-ubuntu">
             Wardude704@gamil.com
           </span>
         </div>
