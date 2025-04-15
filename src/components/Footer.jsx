@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Footer() {
   const emailRef = useRef();
-  const actualEmail = "Wardude704@gmail.com";
+  const actualEmail = "Warisganiu830@gmail.com";
 
   useEffect(() => {
     const element = emailRef.current;
@@ -121,7 +121,7 @@ function Footer() {
         className="mb-3"
       >
         <button
-          className="font-mono text-3xl text-zinc-200 text-opacity-50 active:text-opacity-100 md:text-4xl lg:text-5xl"
+          className="font-mono text-2xl text-zinc-200 text-opacity-50 active:text-opacity-100 md:text-4xl lg:text-5xl"
           ref={emailRef}
         >
           Warisganiu830@gmail.com
