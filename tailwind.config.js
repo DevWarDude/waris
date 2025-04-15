@@ -13,10 +13,12 @@ export default {
         sans: ["Public Sans", "ui-sans-serif", "system-ui"],
         ubuntu: ["Ubuntu", "sans-serif"],
         audiowide: ["Audiowide", "cursive"],
+        jost: ["Jost", "sans-serif"],
       },
-      // backgroundImage: {
-      //   "custom-gradient": "linear-gradient(135deg, zinc-900, zinc-500",
-      // },
+
+      backgroundImage: {
+        radial: "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],
