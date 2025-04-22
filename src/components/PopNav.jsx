@@ -45,16 +45,31 @@ function PopNav({ isOpen, scrollToSection, setIsOpen }) {
           className="-mt-3 flex flex-col gap-10 text-lg text-stone-50"
           ref={menuRef}
         >
-          {links.map((text, i) => (
-            <li
-              key={text}
-              ref={(el) => (linkRefs.current[i] = el)}
-              className="text-lg font-extrabold"
-              onClick={() => handlePopMenu(text)}
-            >
-              {text}
-            </li>
-          ))}
+          {links.map((text, i) => {
+            if (text === "Resume")
+              return (
+                <a
+                  target="_blank"
+                  key={i}
+                  href="Ganiu-Waris-FlowCV-Resume.pdf"
+                  className="text-lg font-extrabold"
+                  ref={(el) => (linkRefs.current[i] = el)}
+                >
+                  {text}
+                </a>
+              );
+
+            return (
+              <li
+                key={text}
+                ref={(el) => (linkRefs.current[i] = el)}
+                className="text-lg font-extrabold"
+                onClick={() => handlePopMenu(text)}
+              >
+                {text}
+              </li>
+            );
+          })}
         </ul>
       </div>
     )

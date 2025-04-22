@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import { GSAP, ReactSVG, Tailwind } from "./SVGs";
+import { GSAP, JavaScriptSVG, ReactSVG, Tailwind, CSS, HTML } from "./SVGs";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,6 +29,17 @@ const projects = [
     className: "designo",
     linkClassName: ["designo-preview", "designo-view"],
   },
+  {
+    title: "Etsy Clone – Frontend E-Commerce Demo (HTML, CSS, JavaScript)",
+    description:
+      "A responsive Etsy-inspired e-commerce website built with pure HTML, CSS, and JavaScript. This frontend demo replicates key features of Etsy’s UI",
+    techStack: [{ icon: HTML }, { icon: CSS }, { icon: JavaScriptSVG }],
+    projectImg: "fox-shop.png",
+    projectLink: "https://fox-e-commerce.vercel.app",
+    gitHubLink: "https://github.com/DevWarDude/Designo",
+    className: "fox-shop",
+    linkClassName: ["fox-preview", "fox-view"],
+  },
 ];
 
 function Projects() {
@@ -44,22 +55,6 @@ function Projects() {
         scrollTrigger: {
           trigger: ".hoobank",
           start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      },
-    );
-
-    gsap.fromTo(
-      ".designo",
-      { scale: 0.5, opacity: 0 },
-      {
-        scale: 1,
-        opacity: 1,
-        duration: 1,
-        ease: "bounce.out",
-        scrollTrigger: {
-          trigger: ".hoobank",
-          start: "top 50%",
           toggleActions: "play none none none",
         },
       },
@@ -118,6 +113,23 @@ function Projects() {
     //     },
     //   },
     // );
+
+    gsap.fromTo(
+      ".designo",
+      { scale: 0.5, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "bounce.out",
+        scrollTrigger: {
+          trigger: ".designo",
+          start: "top 50%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
     gsap.fromTo(
       ".designo-preview",
       {
@@ -149,6 +161,62 @@ function Projects() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".designo-view",
+          start: "top 100%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".fox-shop",
+      {
+        clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+        scaleX: 0.2,
+      },
+      {
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+        scaleX: 1,
+        duration: 0.7,
+        ease: "bounce",
+        scrollTrigger: {
+          trigger: ".fox-shop",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".fox-preview",
+      {
+        opacity: 0,
+        rotate: -90,
+      },
+      {
+        opacity: 1,
+        rotate: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".fox-preview",
+          start: "top 100%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+    gsap.fromTo(
+      ".fox-view",
+      {
+        opacity: 0,
+        rotate: 90,
+      },
+      {
+        opacity: 1,
+        rotate: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".fox-view",
           start: "top 100%",
           toggleActions: "play none none none",
         },

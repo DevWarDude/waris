@@ -125,6 +125,12 @@ export const GSAP = ({ className }) => {
     />
   );
 };
+export const CSS = ({ className }) => {
+  return <img src="icons8-css3.svg" alt="CSS" className={`${className}`} />;
+};
+export const HTML = ({ className }) => {
+  return <img src="icons8-html5.svg" alt="HTML" className={`${className}`} />;
+};
 
 GSAP.propTypes = {
   className: PropType.string.isRequired,
@@ -133,24 +139,39 @@ GSAP.propTypes = {
 Supabase.propTypes = {
   className: PropType.string.isRequired,
 };
+
 Tailwind.propTypes = {
   className: PropType.string.isRequired,
 };
+
 NextSVG.propTypes = {
   className: PropType.string.isRequired,
 };
+
 ReactSVG.propTypes = {
   className: PropType.string.isRequired,
 };
+
 JavaScriptSVG.propTypes = {
   className: PropType.string.isRequired,
 };
+
 ReduxSVG.propTypes = {
   className: PropType.string.isRequired,
 };
+
 ReactQuery.propTypes = {
   className: PropType.string.isRequired,
 };
+
 StyledComponent.propTypes = {
+  className: PropType.string.isRequired,
+};
+
+HTML.propTypes = {
+  className: PropType.string.isRequired,
+};
+
+CSS.propTypes = {
   className: PropType.string.isRequired,
 };

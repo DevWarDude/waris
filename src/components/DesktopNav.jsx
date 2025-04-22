@@ -29,15 +29,28 @@ function DesktopNav({ scrollToSection }) {
   return (
     <>
       {links.map((link, index) => {
+        if (link === "Resume")
+          return (
+            <a
+              key={index}
+              href="Ganiu-Waris-FlowCV-Resume.pdf"
+              className="desktop-nav"
+              target="_blank"
+              ref={(el) => (linkRefs.current[index] = el)}
+            >
+              {link}
+            </a>
+          );
+
         return (
-          <li
+          <div
             key={index}
             onClick={() => handleDesktopNav(link)}
-            className="relative hidden cursor-pointer list-none items-center text-xl font-medium tracking-wide after:block after:h-0.5 after:origin-left after:scale-x-0 after:bg-stone-200 after:transition-all after:duration-300 hover:after:scale-x-100 sm:block"
+            className="desktop-nav"
             ref={(el) => (linkRefs.current[index] = el)}
           >
             {link}
-          </li>
+          </div>
         );
       })}
     </>

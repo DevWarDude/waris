@@ -11,3 +11,7 @@
     #0a0a0a
   );
 }
+
+.desktop-nav {
+  @apply relative hidden cursor-pointer list-none items-center text-xl font-medium tracking-wide after:block after:h-0.5 after:origin-left after:scale-x-0 after:bg-stone-200 after:transition-all after:duration-300 hover:after:scale-x-100 sm:block;
+}
