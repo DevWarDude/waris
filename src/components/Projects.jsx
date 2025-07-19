@@ -53,7 +53,7 @@ const projects = [
   {
     title: "Horizon – Personal Finance Dashboard",
     description:
-      "Horizon is a modern, responsive personal finance web application designed to help users manage their accounts, monitor transactions, and apply for loans effortlessly.",
+      "Horizon is a personal finance web app built with React, Supabase, Tailwind CSS, and Framer Motion. It features user authentication, loan management, account settings, and responsive UI transitions for a seamless user experience.",
     techStack: [
       { icon: ReactSVG },
       { icon: Supabase },
