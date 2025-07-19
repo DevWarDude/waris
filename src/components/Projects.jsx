@@ -1,5 +1,15 @@
 import { FaGithub } from "react-icons/fa";
-import { GSAP, JavaScriptSVG, ReactSVG, Tailwind, CSS, HTML } from "./SVGs";
+import {
+  GSAP,
+  JavaScriptSVG,
+  ReactSVG,
+  Tailwind,
+  CSS,
+  HTML,
+  Supabase,
+  ReactQuery,
+  FramerMotion,
+} from "./SVGs";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -39,6 +49,23 @@ const projects = [
     gitHubLink: "https://github.com/DevWarDude/Designo",
     className: "fox-shop",
     linkClassName: ["fox-preview", "fox-view"],
+  },
+  {
+    title: "Horizon – Personal Finance Dashboard",
+    description:
+      "Horizon is a modern, responsive personal finance web application designed to help users manage their accounts, monitor transactions, and apply for loans effortlessly.",
+    techStack: [
+      { icon: ReactSVG },
+      { icon: Supabase },
+      { icon: Tailwind },
+      { icon: ReactQuery },
+      { icon: FramerMotion },
+    ],
+    projectImg: "new-project-pic.png",
+    projectLink: "https://fox-horizon.vercel.app/",
+    gitHubLink: "https://github.com/DevWarDude/horizon",
+    className: "hoobank",
+    linkClassName: ["hoobank-preview", "hoobank-view"],
   },
 ];
 
@@ -169,18 +196,15 @@ function Projects() {
 
     gsap.fromTo(
       ".fox-shop",
+      { scale: 0.2, opacity: 0 },
       {
-        clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
-        scaleX: 0.2,
-      },
-      {
-        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-        scaleX: 1,
-        duration: 0.7,
-        ease: "bounce",
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "bounce.out",
         scrollTrigger: {
           trigger: ".fox-shop",
-          start: "top 80%",
+          start: "top 50%",
           toggleActions: "play none none none",
         },
       },

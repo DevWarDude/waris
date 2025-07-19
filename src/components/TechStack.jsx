@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import {
-  NextSVG,
+  // NextSVG,
   ReactSVG,
   ReactQuery,
   JavaScriptSVG,
@@ -9,14 +9,15 @@ import {
   Supabase,
   StyledComponent,
   Tailwind,
+  FramerMotion,
 } from "./SVGs";
 import gsap from "gsap";
 
 const TECHSTACK = [
-  {
-    icon: NextSVG,
-    name: "Next.js",
-  },
+  // {
+  //   icon: NextSVG,
+  //   name: "Next.js",
+  // },
   { icon: ReactSVG, name: "React" },
   { icon: JavaScriptSVG, name: "JavaScript" },
   { icon: Tailwind, name: "Tailwind " },
@@ -24,6 +25,7 @@ const TECHSTACK = [
   { icon: ReactQuery, name: "React Query" },
   { icon: Supabase, name: "Supabase" },
   { icon: GSAP, name: "GSAP " },
+  { icon: FramerMotion, name: "Framer Motion" },
   { icon: StyledComponent, name: "Styled Component" },
 ];
 

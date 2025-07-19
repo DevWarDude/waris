@@ -125,6 +125,16 @@ export const GSAP = ({ className }) => {
     />
   );
 };
+export const FramerMotion = ({ className }) => {
+  return (
+    <img
+      src="framer-motion-seeklogo.svg"
+      alt="Framer Motion"
+      className={`${className}`}
+    />
+  );
+};
+
 export const CSS = ({ className }) => {
   return <img src="icons8-css3.svg" alt="CSS" className={`${className}`} />;
 };
@@ -173,5 +183,9 @@ HTML.propTypes = {
 };
 
 CSS.propTypes = {
+  className: PropType.string.isRequired,
+};
+
+FramerMotion.propTypes = {
   className: PropType.string.isRequired,
 };
