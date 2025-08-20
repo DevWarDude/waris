@@ -9,7 +9,12 @@ function SocialLink({ className, iconClassName }) {
       <a href="https://x.com/BackCodes704" target="_blank">
         <FaTwitter className={`${iconClassName}`} />
       </a>
+
+      <a href="https://wa.me/2348122696223?text=Hello%20I%20came%20across%20your%20portfolio!
+">
+
       <FaWhatsapp className={`${iconClassName}`} />
+      </a>
       <a
         href="https://www.linkedin.com/in/ganiu-waris-588b722b7/"
         target="_blank"

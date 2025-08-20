@@ -64,8 +64,8 @@ const projects = [
     projectImg: "new-project-pic.png",
     projectLink: "https://fox-horizon.vercel.app/",
     gitHubLink: "https://github.com/DevWarDude/horizon",
-    className: "hoobank",
-    linkClassName: ["hoobank-preview", "hoobank-view"],
+    className: "horizon",
+    linkClassName: ["horizon-preview", "horizon-view"],
   },
 ];
 
@@ -248,13 +248,67 @@ function Projects() {
     );
 
     gsap.fromTo(
+      ".horizon",
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "bounce.out",
+        scrollTrigger: {
+          trigger: ".horizon",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".horizon-preview",
+      {
+        opacity: 0,
+        y: -50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".horizon-preview",
+          start: "top 100%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".horizon-view",
+      {
+        opacity: 0,
+        scale: 0.2,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".horizon-view",
+          start: "top 100%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
       ".techStack",
       {
         opacity: 0,
       },
       {
         opacity: 1,
-        duration: 1,
+        duration: 0.4,
         stagger: 0.2,
         scrollTrigger: {
           trigger: ".techStack",
