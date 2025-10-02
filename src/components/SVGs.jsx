@@ -141,6 +141,15 @@ export const CSS = ({ className }) => {
 export const HTML = ({ className }) => {
   return <img src="icons8-html5.svg" alt="HTML" className={`${className}`} />;
 };
+export const TypeScript = ({ className }) => {
+  return (
+    <img
+      src="typescript-official-svgrepo-com.svg"
+      alt="TypeScript"
+      className={`${className}`}
+    />
+  );
+};
 
 GSAP.propTypes = {
   className: PropType.string.isRequired,
@@ -187,5 +196,9 @@ CSS.propTypes = {
 };
 
 FramerMotion.propTypes = {
+  className: PropType.string.isRequired,
+};
+
+TypeScript.propTypes = {
   className: PropType.string.isRequired,
 };

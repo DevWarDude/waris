@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import {
-  // NextSVG,
+  NextSVG,
   ReactSVG,
   ReactQuery,
   JavaScriptSVG,
@@ -10,14 +10,19 @@ import {
   StyledComponent,
   Tailwind,
   FramerMotion,
+  TypeScript,
 } from "./SVGs";
 import gsap from "gsap";
 
 const TECHSTACK = [
-  // {
-  //   icon: NextSVG,
-  //   name: "Next.js",
-  // },
+  {
+    icon: NextSVG,
+    name: "Next.js",
+  },
+  {
+    icon: TypeScript,
+    name: "TypeScript",
+  },
   { icon: ReactSVG, name: "React" },
   { icon: JavaScriptSVG, name: "JavaScript" },
   { icon: Tailwind, name: "Tailwind " },
@@ -148,7 +153,7 @@ function TechStack() {
           })}
         </div>
         <img
-          src="code.pic.png"
+          src="/show-tsx.png"
           alt="Codes"
           className="code codeImg mt-12 rounded-3xl sm:mt-20 lg:mt-[20px]"
         />

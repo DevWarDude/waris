@@ -13,8 +13,8 @@ function Header({ isOpen, setIsOpen }) {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-[100] flex flex-col items-center bg-transparent px-6 py-8 sm:px-10 md:px-16">
-      <nav className="md: relative z-[3] flex w-[100%] items-center justify-between rounded-full border-[.001rem] border-stone-200 border-opacity-10 px-4 py-5 backdrop-blur-sm sm:w-[610px] sm:px-7 sm:py-4 md:px-6 lg:mt-14">
-        <div className="sm:hidden">
+      <nav className="md: relative z-[3] flex w-[100%] items-center justify-between rounded-full border-[.001rem] border-stone-200 border-opacity-10 px-4 py-5 backdrop-blur-sm sm:px-7 sm:py-4 md:w-[610px] md:px-6 lg:mt-14">
+        <div className="md:hidden">
           <button onClick={() => setIsOpen((is) => !is)}>
             {isOpen ? <X /> : <Menu />}
           </button>

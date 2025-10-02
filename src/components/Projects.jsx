@@ -4,10 +4,12 @@ import {
   JavaScriptSVG,
   ReactSVG,
   Tailwind,
+  NextSVG,
+  TypeScript,
+  ReactQuery,
   CSS,
   HTML,
   Supabase,
-  ReactQuery,
   FramerMotion,
 } from "./SVGs";
 import { useEffect } from "react";
@@ -49,6 +51,23 @@ const projects = [
     gitHubLink: "https://github.com/DevWarDude/Designo",
     className: "fox-shop",
     linkClassName: ["fox-preview", "fox-view"],
+  },
+  {
+    title: "Classroom Management ( Work In Progress )",
+    description:
+      "A teacher-focused classroom management system built with Next.js, Tailwind, and shadcn/ui. Features include assignments, student tracking, notifications, and real-time class management.",
+    techStack: [
+      { icon: NextSVG },
+      { icon: Tailwind },
+      { icon: TypeScript },
+      { icon: ReactQuery },
+    ],
+
+    projectImg: "classroom.png",
+    projectLink: "#",
+    gitHubLink: "https://github.com/DevWarDude/classroom",
+    className: "classroom-app",
+    linkClassName: ["classroom-preview", "classroom-view"],
   },
   {
     title: "Horizon – Personal Finance Dashboard",
@@ -295,6 +314,54 @@ function Projects() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".horizon-view",
+          start: "top 100%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".classroom-app",
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "bounce.out",
+        scrollTrigger: {
+          trigger: ".classroom-app",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".classroom-preview",
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".classroom-preview",
+          start: "top 100%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    gsap.fromTo(
+      ".classroom-view",
+      { opacity: 0, scale: 0.2 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".classroom-view",
           start: "top 100%",
           toggleActions: "play none none none",
         },
